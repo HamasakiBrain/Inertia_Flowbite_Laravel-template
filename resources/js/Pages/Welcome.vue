@@ -1,6 +1,6 @@
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
-
+import AppLayout from '@/Layouts/AppLayout.vue';
 defineProps({
   canLogin: Boolean,
   canRegister: Boolean,
@@ -10,5 +10,7 @@ defineProps({
 </script>
 
 <template>
-<h1>Success</h1>
+    <AppLayout>
+        {{  $t('Dashboard') }}
+    </AppLayout>
 </template>
